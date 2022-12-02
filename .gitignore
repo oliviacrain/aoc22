@@ -15,3 +15,6 @@ Cargo.lock
 
 # The AoC author has asked for people to not publicly aggregate our inputs
 **/input.txt
+
+# Environment file contains my AoC cookie
+.env
