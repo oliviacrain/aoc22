@@ -9,6 +9,6 @@ setup DAY: && (fetch DAY)
     cp template.rs "solutions/day{{DAY}}b/src/main.rs"
 
 fetch DAY:
-    @curl -s -o input.txt 'https://adventofcode.com/2022/day/{{DAY}}/input' --cookie "session={{aoc_session}}" --user-agent "curl-7.85-oliviacrain"
+    @curl -s -o input.txt 'https://adventofcode.com/2022/day/{{DAY}}/input' --cookie "session={{aoc_session}}" --user-agent "curl/7.85.0 oliviacrain"
     cp input.txt solutions/day{{DAY}}a/input.txt
     mv input.txt solutions/day{{DAY}}b/input.txt
